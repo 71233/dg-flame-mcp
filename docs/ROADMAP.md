@@ -22,10 +22,10 @@ Goal: establish the project identity and a minimal runnable package.
 - [x] Define capability-first architecture
 - [x] Define Observe -> Plan -> Act -> Verify loop
 - [x] Document relationship to prior Flame MCP work
-- [ ] Create minimal MCP server package
-- [ ] Add development instructions
-- [ ] Add basic tests
-- [ ] Define first experimental protocol between MCP server and Flame
+- [x] Create minimal MCP server package
+- [x] Add development instructions
+- [x] Add basic tests
+- [x] Define first experimental protocol between MCP server and Flame
 
 Exit condition:
 
@@ -36,6 +36,8 @@ A developer can install the project and run a minimal MCP server locally.
 ## Phase 1 - Flame connection PoC
 
 Goal: prove reliable two-way communication with Flame.
+
+A minimal bridge, Unix-domain socket transport, state handlers, normalized results, and main-thread scheduler are now implemented for testing. The checklist below remains open until those paths are validated on a live Flame workstation. See [Phase 1 PoC](PHASE1_POC.md).
 
 - [ ] Create minimal Flame-side bridge
 - [ ] Establish local transport

@@ -12,6 +12,9 @@ license = { file = "LICENSE" }
 authors = [
   { name = "DG Flame MCP contributors" }
 ]
+dependencies = [
+  "mcp>=2,<3"
+]
 keywords = [
   "autodesk-flame",
   "mcp",
@@ -28,6 +31,9 @@ classifiers = [
   "Programming Language :: Python :: 3.11",
   "Programming Language :: Python :: 3.12"
 ]
+
+[project.scripts]
+dg-flame-mcp = "dg_flame_mcp.server:main"
 
 [project.urls]
 Repository = "https://github.com/71233/dg-flame-mcp"

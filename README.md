@@ -18,6 +18,8 @@ The initial focus is not API coverage. The first goal is to prove that an MCP-co
 
 Expect breaking changes while the architecture is being validated.
 
+A first Phase 1 connection implementation is available for live-Flame testing: MCP-over-stdio on the client side, an experimental local Unix-domain socket bridge, main-thread scheduling, state inspection, and a verified tab-switching operation. See [Phase 1 PoC](docs/PHASE1_POC.md).
+
 ## Goals
 
 - Provide an MCP-native interface for Autodesk Flame.
@@ -144,10 +146,14 @@ See [Architecture](docs/ARCHITECTURE.md) and [Roadmap](docs/ROADMAP.md).
 dg-flame-mcp/
 ├── docs/
 │   ├── ARCHITECTURE.md
+│   ├── PHASE1_POC.md
 │   └── ROADMAP.md
 ├── src/
 │   └── dg_flame_mcp/
 │       ├── __init__.py
+│       ├── bridge_client.py
+│       ├── flame_bridge.py
+│       ├── protocol.py
 │       └── server.py
 ├── .gitignore
 ├── LICENSE
