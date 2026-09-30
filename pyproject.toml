@@ -1,0 +1,36 @@
+[build-system]
+requires = ["hatchling>=1.25"]
+build-backend = "hatchling.build"
+
+[project]
+name = "dg-flame-mcp"
+version = "0.0.1"
+description = "High-freedom MCP interface for Autodesk Flame."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [
+  { name = "DG Flame MCP contributors" }
+]
+keywords = [
+  "autodesk-flame",
+  "mcp",
+  "model-context-protocol",
+  "vfx",
+  "automation",
+  "ai-agent"
+]
+classifiers = [
+  "Development Status :: 2 - Pre-Alpha",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12"
+]
+
+[project.urls]
+Repository = "https://github.com/71233/dg-flame-mcp"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/dg_flame_mcp"]
